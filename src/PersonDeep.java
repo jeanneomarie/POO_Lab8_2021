@@ -1,5 +1,4 @@
 public class PersonDeep implements Comparable<PersonDeep>, Cloneable {
-
     private String firstName;
     private String lastName;
     private int age;
