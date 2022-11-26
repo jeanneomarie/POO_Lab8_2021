@@ -1,5 +1,4 @@
 public class PersonShallow implements Comparable<PersonShallow>, Cloneable {
-
     private String firstName;
     private String lastName;
     private int age;
