@@ -1,5 +1,4 @@
 public class CarShallow {
-
     private String name;
     private String color;
 
