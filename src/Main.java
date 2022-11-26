@@ -4,14 +4,9 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 public class Main {
-
     public static void main(String[] args) {
-        //COMPARABLE EXAMPLE
-        CarShallow carShallow = new CarShallow("BMW", "black");
-        CarDeep carDeep = new CarDeep("BMW", "black");
-
+        // COMPARABLE EXAMPLE
         // PROBLEM 3.4
-        /*
         PersonShallow[] persons = {
                 new PersonShallow("Ioana", "Onofrei", 23, carShallow),
                 new PersonShallow("Andrei", "Cobzaru", 22, carShallow),
@@ -27,10 +22,13 @@ public class Main {
         System.out.println("AFTER Sorting");
         for (PersonShallow person : persons) {
             System.out.println(person.getFirstName());
-        }*/
+        }
 
-        //CLONEABLE EXAMPLE
+        // CLONEABLE EXAMPLE
         // PROBLEM 3.5
+        CarShallow carShallow = new CarShallow("BMW", "black");
+        CarDeep carDeep = new CarDeep("BMW", "black");
+        
         System.out.println("SHALLOW");
         PersonShallow person1 = new PersonShallow("Andreea","Opris",23, carShallow);
         PersonShallow person2 = null;
@@ -64,7 +62,7 @@ public class Main {
         System.out.println(person1.getFirstName());
         System.out.println(person2.getFirstName());
 
-        /*System.out.println("DEEP");
+        System.out.println("DEEP");
         PersonDeep person3 = new PersonDeep("Andreea","Opris",23, carDeep);
         PersonDeep person4 = null;
         try {
@@ -72,6 +70,7 @@ public class Main {
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
+        
         System.out.println("BEFORE");
         System.out.println(person3.getCar().getColor());
         System.out.println(person4.getCar().getColor());
@@ -94,11 +93,10 @@ public class Main {
         person4.setFirstName("Maria");
         System.out.println("AFTER");
         System.out.println(person3.getFirstName());
-        System.out.println(person4.getFirstName());*/
+        System.out.println(person4.getFirstName());
 
         // ENUMERATION EXAMPLE
-        /*Vector dayNames = new Vector();
-
+        Vector dayNames = new Vector();
         dayNames.add("Sunday");
         dayNames.add("Monday");
         dayNames.add("Tuesday");
@@ -109,6 +107,6 @@ public class Main {
 
         for (Enumeration e = dayNames.elements(); e.hasMoreElements() ;){
             System.out.println(e.nextElement());
-        }*/
+        }
     }
 }
