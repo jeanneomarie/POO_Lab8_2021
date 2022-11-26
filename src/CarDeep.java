@@ -1,5 +1,4 @@
 public class CarDeep implements Cloneable{
-
     private String name;
     private String color;
 
